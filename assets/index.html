@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: #17f067;
+        font-family: sans-serif;
+        color: #40ffa3;
+        text-align: center;
+      }
+      h1{
+        color:#4b4b4d;
+      }
+      div {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #4b4b4d;
+}
+
+    </style>
+    <h1>Formulario</h1>
+    <form action="">
+      <div>
+        <label for="nombre">Nombre</label></br>
+        <input type="text" nombre="nombre" required>
+      </div>
+      <div>
+        <label for="apellido">Apellido</label></br>
+        <input type="txt" nombre="apellido" required>
+      </div>
+      <div>
+        <label for="tel">Teléfono</label></br>
+        <input type="tel" nombre="telefono" required>
+      </div>
+      <div>
+      <label for="drop">Escoge una opción</label></br>
+        <select name="drop" id="dorpdown">
+          <option value="rojo">Rojo</option>
+          <option value="amarillo">Amarillo</option>
+          <option value="azul">Azul</option>
+        </select>
+      </div>
+      <div>
+        <label for="email">Email</label></br>
+        <input type="email" name="email" required>
+      </div>
+      <div>
+        <label for="pw">Password</label></br>
+        <input type="password" name="pw" pattern="{10-1}" title"6 o más caracteres" required>
+      </div>
+      <div>
+        <input type="submit" nombre="enviar">
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Convertir temperaturas</title>
+  </head>
+  <body>
+    <style>
+      body{
+        text-align: center;
+        font-family: sans-serif;
+      }
+    </style>
+    <h1>Convertir temperaturas</h1>
+    <div>
+      <label for="farenheit">Farenheit</label>
+      <input name="farenheit" id="farenheit" type="text" />
+      <button type="buton" onclick="convertirCelsius(); return false">Convert to Celsius</button>
+    </div></br>
+    <div>
+      <label for="Celsius">Celsius</label>
+      <input name="celsius" id="celsius" type="text" />
+      <button type="buton" onclick="convertirFarenheit(); return false">Convert to Farenheit</button>
+    </div>
+    <script>
+      function convertirFarenheit(celsius){
+        return  document.getElementById('farenheit').value * 1.8 + 32;
+      }
+      function convertirCelsius(farenheit){
+        return (document.getElementById('celsius').value - 32) * 1.8;
+      }
+    </script>
+  </body>
+</html>
